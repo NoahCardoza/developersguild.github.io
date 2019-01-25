@@ -56,6 +56,7 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
+  height: 10px;
 }
 
 body {
@@ -548,8 +549,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1px;
+  padding-left: 1px;
   margin-right: auto;
   margin-left: auto;
 }
