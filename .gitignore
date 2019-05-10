@@ -1,6 +1,9 @@
+# Mac OS
+.DS_Store
+
+# Node
 node_modules
-<<<<<<< HEAD
-.sass-cache
-=======
 bower_components
->>>>>>> master
+
+# Styles
+.sass-cache
