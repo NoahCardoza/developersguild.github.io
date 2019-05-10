@@ -1,4 +1,4 @@
-# dg
+# DevelopersGuild.io
 
 > A Vue.js project
 
