@@ -3,6 +3,21 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+
+Vue.use(Vuetify, {
+  theme: {
+    'primary': '#1e88e5',
+    'secondary': '#424242',
+    'accent': '#82B1FF',
+    'error': '#FF5252',
+    'info': '#2196F3',
+    'success': '#4CAF50',
+    'warning': '#FB8C00'
+  }
+})
 
 Vue.config.productionTip = false
 
@@ -10,6 +25,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
