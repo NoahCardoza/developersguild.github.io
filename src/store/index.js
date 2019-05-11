@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import navigation from '@/data/navigation'
+import contact from '@/data/contact'
 
 Vue.use(Vuex)
 
@@ -8,7 +9,8 @@ export default new Vuex.Store({
   state: {
     drawer: false,
     // configurations
-    navigation
+    navigation,
+    contact
   },
   mutations: {
     setDrawer: (state, payload) => (state.drawer = payload),
