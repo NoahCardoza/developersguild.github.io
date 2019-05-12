@@ -5,6 +5,10 @@
 const path = require('path')
 
 module.exports = {
+  global: {
+    indexPath: 'src/index.html',
+    staticPath: 'src/static'
+  },
   dev: {
 
     // Paths
