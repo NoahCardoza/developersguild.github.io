@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Developers Guild - De Anza",
+=======
+  "name": "dg.io",
+>>>>>>> 99af2ff582222a51ee2e4a4c58f2384cf6f16d85
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Noah Cardoza <noahcardoza@gmail.com>",
@@ -13,6 +17,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "move-file": "^1.2.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuetify": "^1.5.14",

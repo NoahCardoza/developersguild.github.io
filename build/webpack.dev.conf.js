@@ -24,9 +24,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devServer: {
     clientLogLevel: 'warning',
     historyApiFallback: {
-      rewrites: [
-        { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
-      ],
+      index: 'src'
+      // disabled rewrites for now since the static folder won't
+      // be found using the dev server otherwise... GitHub Pages stuff smh
+      // rewrites: [
+        // { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
+        // { from: /^static.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
+      // ],
     },
     hot: true,
     contentBase: false, // since we use CopyWebpackPlugin.
@@ -54,13 +58,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'index.html',
+      template: config.global.indexPath,
       inject: true
     }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, '../static'),
+        from: path.resolve(__dirname, '..', config.global.staticPath),
         to: config.dev.assetsSubDirectory,
         ignore: ['.*']
       }
