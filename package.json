@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "Developers Guild - De Anza",
-=======
   "name": "dg.io",
->>>>>>> 99af2ff582222a51ee2e4a4c58f2384cf6f16d85
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Noah Cardoza <noahcardoza@gmail.com>",
